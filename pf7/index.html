@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>디자인_자료</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body,
+        html {
+            width: 100%;
+            height: 100%;
+            font-family: 'Noto Sans KR', 'Open Sans', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        button {
+            border: 0;
+            outline: 0;
+            width: 100px;
+            height: 100px;
+            font-size: 20px;
+            transition: 0.5s
+        }
+
+        button:hover {
+            background: #d41a4c;
+            color: #fff;
+        }
+
+        button a {
+            color: #333;
+            display: block;
+        }
+
+        button:hover a {
+            color: #fff;
+            display: block;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .page {
+            width: 100%;
+            margin: 0 auto;
+            height: 150%;
+        }
+
+        .page h3 {
+            margin: 5%;
+            color: #333;
+            padding: 5%;
+        }
+
+        .page:after {
+            content: '';
+            clear: both;
+            display: block;
+            height: 0;
+        }
+
+        .img_wrap {
+            width: 30%;
+            position: relative;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .img_wrap img {
+            position: absolute;
+            display: block;
+            width: 100%;
+            transition: 0.5s;
+            top: 0;
+            left: 0px;
+            height: auto;
+        }
+
+        .img_wrap .item1 {}
+
+        .img_wrap .item2 {
+            opacity: 0;
+        }
+
+        .img_wrap .item2:hover {
+            opacity: 1;
+        }
+
+        .page2 {
+            background: #eee;
+        }
+
+        .img_wrap2 {
+            width: 80%;
+            display: grid;
+            margin: 0 auto;
+            grid: 'item1 item2 item3 item3'
+                  'item5 item8 item8 item4'
+                  'item7 item8 item8 item6'
+                
+                ;
+        }
+        
+        .img_wrap2 .item1,.img_wrap2 .item2,.img_wrap2 .item3,.img_wrap2 .item4,.img_wrap2 .item5,.img_wrap2 .item6,.img_wrap2 .item7{width: auto;height: 300px;filter: grayscale(1)}
+        
+        .img_wrap2 div:hover{filter: grayscale(0)} 
+        .img_wrap2 div{background: #fff;}
+        .img_wrap2 .item1{grid-area: item1;}
+        .img_wrap2 .item2{grid-area: item2;}
+        .img_wrap2 .item3{grid-area: item3;}
+        .img_wrap2 .item4{grid-area: item4;}
+        .img_wrap2 .item5{grid-area: item5;}
+        .img_wrap2 .item6{grid-area: item6;}
+        .img_wrap2 .item7{grid-area: item7;}
+        .img_wrap2 .item8{grid-area: item8;background: #fff;border: 0;outline: 0;height: 600px;;overflow: hidden;}
+
+        
+        .img_wrap2 div img{display: block;width: 100%;height: 100%;cursor: pointer;}
+        .img_wrap2 .item8 img{height: 100%;width: auto;cursor: zoom-in;}
+        
+        
+        
+       /* .img_wrap2 .item3 img,.img_wrap2 .item7 img{width: 100%;height: auto;}*/
+  
+        .big{position: fixed;width: 100%;height: 100%;top: 0;left: 0;}
+        .black{width: 100%;height: 100%;background: rgba(0, 0, 0, 0.8);top: 0;left: 0;position: fixed;}
+        .m_pop{width: 1600px;height: 1000px;background: #fff;position: fixed;top: calc(50% - 500px);left: calc(50% - 800px);overflow: hidden;}
+        .m_pop img{text-align: center;margin: 0 auto;}
+        
+        .img_wrap3{padding: 50px 0px;margin: 0 auto;width: 1500px;}
+        .img_wrap3 div{float: left;width: 500px;height: 500px;}
+        .img_wrap3 div img{display: block;width: 500px;height: 500px;}
+        
+              @media screen and (max-width:800px) {
+            .img_wrap {
+                width: 80%;
+                margin: 0 auto;
+            }
+            
+            .img_wrap2{width: 80%;
+                   grid: 'item1 item2 item3 item4'
+                  'item5 item6 item7 item7'
+                  'item8 item8 item8 item8'
+                       'item8 item8 item8 item8'
+                  
+                  }
+            
+            .img_wrap2 div img{width: 100%;height: 100%;}
+            .img_wrap2 .item1,.img_wrap2 .item2,.img_wrap2 .item3,.img_wrap2 .item4,.img_wrap2 .item5,.img_wrap2 .item6,.img_wrap2 .item7{width: auto;height: 100px;filter: grayscale(1)}
+            .img_wrap2 .item8 img{width: 80%;height: auto;}      
+            .img_wrap2 .item8{height: 400px;}
+            .m_pop{width:80%;height: 80%;background: #fff;position: fixed;top: calc(50% - 40%);left: calc(50% - 40%);overflow: hidden;}
+            .m_pop img{width: 100%;}
+                  
+            .img_wrap3{width: 80%;}      
+            .img_wrap3 div{width: 100%;height: auto;display: block;clear: both;}
+            .img_wrap3 div img{width: 100%;height: 100%;}
+                  
+        }
+        
+        
+        
+        
+    </style>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('.big,.black,.m_pop').hide(0);
+//            
+            $('.page2 .img_wrap2 div img').click(function(){
+                var this_img=$(this).attr('src')
+                
+                $('.page2 .img_wrap2 .item8').show(0).html("<img src='"+this_img+"'>")
+                
+               
+            
+            $('.page2 .img_wrap2 .item8 img').click(function(){
+                 $('.black,.big').show(0);
+                $('.m_pop').show(0).html("<img src='"+this_img+"'>")
+//                 return false;
+            });
+             $('.black,.m_pop,.big').click(function(){
+                 $('.m_pop,.black,.big').hide(0)
+             });
+                
+            });
+            
+            
+
+
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="page page1">
+            <h3>화보편집</h3>
+            <div class="img_wrap" title="사진 위로 마우스를 가져다 주세요.">
+                <img src="./img/mx_img7.png" alt="화1" class="item1">
+                <img src="./img/mx_img71.png" alt="화2" class="item2">
+
+            </div>
+
+
+
+
+        </div>
+        <div class="page page2">
+            <h3>제주유채꽃축제_디자인안</h3>
+            <div class="img_wrap2">
+
+                <div class="item1"><img src="img/mx_img8.png" alt="제주"></div>
+                <div class="item2"><img src="img/mx_img81.png" alt="제주"></div>
+                <div class="item3"><img src="img/mx_img82.png" alt="제주"></div>
+                <div class="item4"><img src="img/mx_img83.jpg" alt="제주"></div>
+                <div class="item5"><img src="img/mx_img84.png" alt="제주"></div>
+                <div class="item6"><img src="img/mx_img85.jpg" alt="제주"></div>
+                <div class="item7"><img src="img/mx_img86.png" alt="제주"></div>
+                <div class="item8"><img src="img/mx_img8.png" title="확대하기"></div>
+
+
+
+            </div>
+            <div class="big">
+            <div class="black"></div>
+            <div class="m_pop"><img></div>
+            </div>
+            
+        </div>
+        <div class="page page3">
+           <h3>앨범 리뉴얼</h3>
+            <div class="img_wrap3">
+                <div class="itme1"><img src="img/mx_img91.png" alt="앨범"></div>
+                <div class="itme2"><img src="img/mx_img92.png" alt="앨범"></div>
+                <div class="itme3"><img src="img/mx_img9.png" alt="앨범"></div>
+                
+            </div>
+            
+            
+        </div>
+
+
+    </div>
+
+</body></html>
