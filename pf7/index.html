@@ -55,19 +55,19 @@
             height: 100%;
         }
 
-        .page {
+        #page {
             width: 100%;
             margin: 0 auto;
             height: 150%;
         }
 
-        .page h3 {
+        #page h3 {
             margin: 5%;
             color: #333;
             padding: 5%;
         }
 
-        .page:after {
+        #page:after {
             content: '';
             clear: both;
             display: block;
@@ -101,7 +101,7 @@
             opacity: 1;
         }
 
-        .page2 {
+        #page2 {
             background: #eee;
         }
 
@@ -185,14 +185,14 @@
         $(document).ready(function() {
             $('.big,.black,.m_pop').hide(0);
 //            
-            $('.page2 .img_wrap2 div img').click(function(){
+            $('#page2 .img_wrap2 div img').click(function(){
                 var this_img=$(this).attr('src')
                 
-                $('.page2 .img_wrap2 .item8').show(0).html("<img src='"+this_img+"'>")
+                $('#page2 .img_wrap2 .item8').show(0).html("<img src='"+this_img+"'>")
                 
                
             
-            $('.page2 .img_wrap2 .item8 img').click(function(){
+            $('#page2 .img_wrap2 .item8 img').click(function(){
                  $('.black,.big').show(0);
                 $('.m_pop').show(0).html("<img src='"+this_img+"'>")
 //                 return false;
@@ -212,7 +212,7 @@
 
 <body>
     <div class="container">
-        <div class="page page1">
+        <div id="page page1">
             <h3>화보편집</h3>
             <div class="img_wrap" title="사진 위로 마우스를 가져다 주세요.">
                 <img src="./img/mx_img7.png" alt="화1" class="item1">
@@ -224,7 +224,7 @@
 
 
         </div>
-        <div class="page page2">
+        <div id="page page2">
             <h3>제주유채꽃축제_디자인안</h3>
             <div class="img_wrap2">
 
@@ -246,7 +246,7 @@
             </div>
             
         </div>
-        <div class="page page3">
+        <div id="page page3">
            <h3>앨범 리뉴얼</h3>
             <div class="img_wrap3">
                 <div class="itme1"><img src="img/mx_img91.png" alt="앨범"></div>
