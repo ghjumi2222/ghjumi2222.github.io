@@ -1,0 +1,277 @@
+@charset "utf-8";
+
+*{margin: 0;padding: 0;}
+
+body,
+html {
+    width: 100%;
+    -ms-overflow-style: none;
+    font-family: 'lottemart D', 'Noto Sans KR', sans-serif;
+    position: relative;overflow-x: hidden;
+}
+
+p,i,button,label{ font-family: 'lottemart D', 'Noto Sans KR', sans-serif;}
+/* color: #4c4d4f; }*/
+::-webkit-scrollbar {
+    display: none;
+}
+input::placeholder{color: #fff;font-family: 'lottemart D', 'Noto Sans KR', sans-serif;}
+
+/*스크롤바가 생기되 내눈에서는 안보여유*/
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+label,
+button,
+input {
+    background-image: none;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+}
+
+/*****************/
+.hd {
+    width: 100%;
+    height: 10vh;
+    background: #eee;
+    position: relative;
+    border-bottom: 3px solid #cc2026;
+    box-shadow: 1px 1px 5px #ccc;
+    position: fixed;
+    z-index: 10;
+}
+
+.logo {
+    display: block;
+    width: 12em;
+    height: 5vh;
+    background-image: url(image/logo.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: 2.9vh;
+    left: calc(50% - 6em);
+}
+
+.close {
+    background-image: url(image/x_icon.png);
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 5%;
+}
+
+
+.ck_item {
+    display: none;
+}
+
+/************아이콘 배치영역*/
+.top_btn {
+    width: 100%;
+    height: 100%;
+}
+
+.top_btn ul {
+    display: block;
+}
+
+.menu {
+    float: left;
+    width: 9%;
+    height: 6vh;
+    margin: 2.5vh;
+}
+
+.menu label {
+    text-indent: -9999px;
+    background-image: url(image/menubar_icon.png);
+    background-size: 85% auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+
+.user {
+    float: right;
+    margin: 2.5vh;
+    width: 8%;
+    height: 6vh;
+
+}
+
+.user label {
+    background-image: url(image/user_icon.png);
+    background-size: 70% auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-indent: -9999px;
+}
+
+
+
+/**********mene1 토글 영역*/
+#menu1 {
+    position: fixed;
+    left: -110%;
+    top: 0;
+    z-index: 99;
+    width: 80%;
+    height: 100vh;
+    transition: 0.5s;
+    background: #fff;
+    box-shadow: 1px 1px 10px #ccc;
+
+}
+
+#menu1:before {
+    content: "";
+    background-image: url(image/logo_toggle_img.png);
+    width: 158px;
+    display: block;
+    height: 26px;
+    background-size: cover;
+    margin: 40px auto;
+
+}
+
+
+#ck1:checked ~ #menu1 {
+    left: 0;
+}
+
+#menu1 label {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+}
+
+.nav {
+    margin: 0px auto;
+    width: 100%;
+}
+
+.nav li {
+    text-align: center;
+    margin: 25px;
+}
+
+.nav li:after {
+    content: "";
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    height: 3px;
+    margin-top: 20px;
+    display: block;
+}
+
+.nav .item1:before {
+    content: "";
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    height: 3px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.nav li a {
+    font-size: 25px;
+    color: #666;
+}
+
+/*************유저 토글 ***********/
+
+#user_int {
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    background: #fff;
+    top: 0;
+    z-index: 99;
+    transition: 0.5s;
+    right: -110%;
+    box-shadow: 1px 1px 10px #ccc;
+}
+
+.user_in {
+    margin: 10% 6%;
+
+}
+
+.user_in p {
+    margin: 20% auto;
+    text-align: center;
+    font-size: 21px;
+    color: #767677;
+}
+
+.user_in li {
+    border: 1px solid #ccc;
+    margin: 2.5vh auto;
+    height: 9vh;
+    font-size: 22px;
+    text-align: center;
+    line-height: 9vh;
+    width: 250px;
+    display: block;
+
+}
+
+.user_in li a {
+    color: #767677;
+    text-decoration: none;
+    display: block;
+}
+
+.user_in li.user_box1 {}
+
+.user_in li.user_box2 {
+    background: #4479e0;
+}
+
+.user_in li.user_box2 a {
+    color: #fff;
+}
+
+#user_int .close {
+    position: absolute;
+    left: 20px;
+    top: 5%;
+}
+
+#ck2:checked ~ #user_int {
+    right: 0;
+}
+/********************토글 .*********/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

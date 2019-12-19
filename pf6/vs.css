@@ -1,0 +1,1168 @@
+@charset "utf-8";
+
+
+.vs {
+    display: block;
+}
+
+#men_sec {
+    width: 100%;
+    display: block;
+    position: relative;
+
+}
+
+#men_sec ul {
+    width: 100%;
+    height: 21vh;
+    border-bottom: 1.5px solid #ccc;
+
+}
+
+#men_sec li {
+    width: 49%;
+    height: 10vh;
+    float: left;
+    margin-top: 11vh;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+#men_sec li a {
+    width: 100%;
+    font-size: 150%;
+    color: #cc2026;
+    text-align: center;
+    line-height: 10vh;
+    font-weight: 700;
+}
+
+#men_sec p {
+    position: absolute;
+    width: 1px;
+    height: 5vh;
+    background: #666;
+    top: 13vh;
+    left: calc(50% - 1px);
+}
+
+
+/**********비주얼영역시작************/
+
+
+#wayselgroup {
+    width: 100%;
+    height: 8vh;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 6%
+}
+
+#wayselgroup li {
+    float: left;
+    display: block;
+    font-size: 140%;
+    width: 28.3%;
+    margin: 4% 2.5%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#wayselgroup li p {
+    text-align: center;
+    color: #4c4d4f;
+    font-weight: 600;
+}
+
+.waysel .listW {
+    position: relative;
+    clear: both;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#section1 {
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+#section1 ul li {
+    float: left;
+    border: 1px solid #ccc;
+    display: block;
+    width: 45%;
+    margin: 2%;
+    height: 15vh;
+    border-radius: 0.5vh
+}
+
+#section1 ul li label {
+    line-height: 15vh;
+    font-size: 200%;
+    color: #818283;
+    display: block;
+}
+
+#section1 .changeImg {
+    position: absolute;
+    z-index: 7;
+    border: 1px solid #ccc;
+    background: #4479e0;
+    width: 51px;
+    height: 51px;
+    top: 4vh;
+    left: 43%
+}
+
+#section1 .changeImg a {
+    line-height: 79px;
+}
+
+#section2 {
+    clear: both;
+    position: relative;
+    margin: 0 auto;
+    width: 95.5%;
+}
+
+#section2 ul {
+    border: 1px solid #ccc;
+    border-radius: 1vh;
+}
+
+#section2 ul li {
+    height: 8vh;
+    font-size: 3.3vh;
+    line-height: 8vh;
+    color: #818283;
+    text-indent: 20%;
+    display: block;
+    margin: 0 auto;
+
+}
+
+#section2 ul li:nth-of-type(1) {
+    background-image: url(image/caleder_img.png);
+    background-repeat: no-repeat;
+    background-size: 9%;
+    background-position: 5% center;
+    border-bottom: 1px solid #ccc;
+
+}
+
+#section2 ul li:nth-of-type(2) {
+    background-image: url(image/passenger_img.png);
+    background-repeat: no-repeat;
+    background-size: 9%;
+    background-position: 5% center;
+    border-bottom: 1px solid #ccc;
+}
+
+#section2 ul li:nth-of-type(3) {
+    background-image: url(image/seat_img.png);
+    background-repeat: no-repeat;
+    background-size: 9%;
+    background-position: 5% center;
+    margin-bottom: 5vh;
+}
+
+#section2 ul li label {
+    display: block;
+}
+
+#section2 .item2_1 {
+    position: absolute;
+    width: 35%;
+    background-image: url(image/check_bx_img.png);
+    background-position: 5% center;
+    background-repeat: no-repeat;
+    text-indent: 25%;
+    right: 0;
+    top: 22vh;
+    background-size: 20%;
+}
+
+#section2 .item2_1 label {}
+
+#section2 .item2_2 {
+    background: #4479e0;
+    color: #fff;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+#section2 .item2_2 a {
+    width: 100%;
+    margin: 0% 20%;
+    color: #fff;
+    display: block;
+
+}
+
+#section2 p {
+    text-align: center;
+    margin: 5vh auto;
+    width: 65%;
+}
+
+#section2 p a {
+    font-size: 3.3vh;
+    color: #818283;
+    background-image: url(image/arrow_big_icon.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    display: block;
+    background-size: 6%;
+}
+
+
+#waywrap .evewrap {
+    width: 100%;
+    height: 100%;
+}
+
+.evewrap .bordertop {
+    border-top: 2vh solid #c1e6e9;
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    padding-top: 2vh;
+}
+
+.evewrap .eveitem1 {
+    float: left;
+    margin: 2vh;
+    font-size: 3.3vh;
+    font-weight: 700;
+    color: #4c4d4f;
+}
+
+.evewrap .eveitem2 {
+    float: right;
+    margin: 2.8vh;
+    font-size: 2.5vh;
+    color: #868687;
+    background-image: url(image/arrow_small_icon.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    width: 16%;
+    background-size: 12%
+}
+
+.eveitemBox1 ul {
+    display: block;
+    padding-bottom: 3vh;
+    width: 100%;
+    height: 100%;
+    height: 7vh;
+}
+
+.eveitem3 {
+    margin-bottom: 3vh;
+    overflow-x: hidden;
+
+}
+
+.eveitem3 > ul {
+    width: 500%;
+    overflow-x: hidden;
+}
+
+.eveitem3 > ul > li {
+    width: 20%;
+    float: left;
+    
+}
+
+.eveitem3_1 img {
+    width:100%;height: auto;
+    
+}
+
+.eveitem4 {
+    margin-bottom: 3vh;
+}
+
+.eveitem4 img {
+    width: 100%;
+    height: auto;
+}
+
+.eveitem5 {
+    margin-bottom: 3vh;
+}
+
+.eveitem5 img {
+    width: 100%;
+    height: auto;
+}
+
+/***********************푸터*/
+#ft .ft1 {
+    background: #a6dbdf;
+    width: 100%;
+    height: 100%;
+}
+
+.ft1 .snsbox {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+
+.ft1 .snsbox li {
+    float: left;
+    margin: 7vh 0vh 4vh 0vh;
+    width: 20%;
+    display: block;
+    height: 25%;
+    margin-right: 5%;
+}
+
+.ft1 .snsbox li img {
+    width: 100%;
+    height: auto;
+}
+
+.ft1 .txtbox {
+    clear: both;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    overflow: hidden;
+}
+
+.ft1 .txtbox li {
+    float: left;
+    display: block;
+    color: #fff;
+    height: 3vh;
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-right: 1px solid #fff;
+}
+
+.ft1 .txtbox li:nth-of-type(1) {
+    width: 29%;
+    text-align: center;
+}
+
+.ft1 .txtbox li:nth-of-type(2) {
+    width: 29%;
+    text-align: center;
+}
+
+.ft1 .txtbox li:nth-of-type(3) {
+    width: 39%;
+    text-align: center;
+    border-right: 0;
+}
+
+.ft1 .txtbox li p {
+    font-size: 2.2vh;
+    /*    background: pink;*/
+    line-height: 3vh;
+    width: 100%;
+}
+
+.ft1 .txtbox2 {
+    clear: both;
+    width: 80%;
+    display: block;
+    margin: 4vh auto;
+    height: 100%;
+    overflow: hidden;
+}
+
+.ft1 .txtbox2 p {
+    color: #fff;
+    font-size: 2vh;
+    line-height: 1.3;
+    margin-bottom: 4vh;
+}
+
+.ft2 {
+    width: 100%;
+    height: 9vh;
+    overflow: hidden;
+    margin: 0 auto;
+    display: block;
+}
+
+.ft2 ul {
+    display: block;
+    clear: both;
+    text-align: center;
+    width: 100%;
+}
+
+.ft2 li {
+    width: 32%;
+    float: left;
+    display: block;
+    margin: 3% auto;
+    line-height: 6vh;
+    height: 5vh;
+}
+
+.ft2 li:nth-of-type(1) {
+    margin-left: 1%;
+    border-right: 1px solid #868687;
+}
+
+.ft2 li:nth-of-type(2) {
+    margin-right: 1%;
+    border-right: 1px solid #868687;
+}
+
+.ft2 li:nth-of-type(3) {}
+
+.ft2 a {
+    color: #4479e0;
+    font-size: 3.3vh;
+    font-weight: 700;
+}
+
+
+.shockut {
+    display: block;
+    width: 100%;
+    height: 5vh;
+    z-index: 8;
+    position: relative;
+}
+
+.shockut .shockitem1 {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    bottom: 5%;
+    left: 70%;
+}
+
+
+.shockut .shockitem1 img {
+    width: 50px;
+    height: 50px;
+    right: 5%;
+    opacity: 0.8
+}
+
+
+/**********토굴들..*****************/
+#counchoice {
+    position: fixed;
+    background: #fff;
+    z-index: 80;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: none;
+    overflow-y: scroll;
+}
+
+#counchoice .cctm {
+    border-bottom: 2px solid #4c4d4f;
+    margin: 0 auto;
+    height: 9vh;
+    float: left;
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+#counchoice .cctm img {
+    width: 40px;
+    height: 40px;
+    margin: 3%;
+}
+
+#counchoice .cctm input {
+    font-size: 28px;
+    color: #4c4d4f;
+    font-family: 'lottemart D', 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    width: 80%;
+    position: absolute;
+    top: 30%;
+    right: 1%;
+}
+
+#counchoice .ccvs {
+    clear: both;
+    width: 100%;
+    height: 100%;
+    margin-top: 15vh;
+}
+
+#counchoice .ccvs > p {
+    font-size: 23px;
+    color: #4c4d4f;
+    margin-bottom: 20px;
+}
+
+#counchoice .ccbox {
+    clear: both;
+    font-size: 22px;
+    font-weight: 200;
+    width: 100%;
+    float: left;
+    box-sizing: content-box;
+    background: #ccc;
+    color: #4c4d4f;
+}
+
+#counchoice .ccbox tr {
+    background: #fff;
+    text-align: center;
+    color: #4c4d4f;
+}
+
+#counchoice .ccbox th {
+    background: #c1e6e9;
+    width: 20%;
+    height: 100%;
+    color: #4c4d4f;
+}
+
+#counchoice .ccbox td {
+    width: 20%;
+    color: #4c4d4f;
+
+}
+
+#ck4:checked ~ #counchoice {
+    display: block;
+}
+
+/************날짜선택*/
+
+#datechice {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    position: fixed;
+    z-index: 200;
+    display: none;
+    top: 0;
+    color: #4c4d4f;
+
+
+}
+
+.dcTitle {
+    display: block;
+    font-size: 5vh;
+    text-align: center;
+    margin: 5% auto;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 2%;
+    color: #4c4d4f;
+
+}
+
+.ddsel {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 4vh;
+    font-family: 'lottemart D', 'Noto Sans KR', sans-serif;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+#dsboxs {
+    background-color: #a6dbdf;
+
+}
+
+.dsBox {
+    display: block;
+    margin: 3%;
+    background-color: #a6dbdf;
+}
+
+.dsBox ul {
+    border-top: 2px solid #ccc;
+    position: relative;
+}
+
+.dsBox li {
+    width: 50%;
+    float: left;
+    text-align: center;
+    font-size: 4vh;
+    margin-top: 4%;
+}
+
+.dsBox li > p {
+    padding: 2%;
+}
+
+.dsBox li > form {
+    background: #fff;
+    border: 1px solid #ccc;
+    font-size: 4vh;
+    margin: 5% auto;
+    padding: 5%;
+    width: 80%;
+}
+
+#datechice > label {
+    background: #4479e0;
+    clear: both;
+    display: block;
+    width: 80%;
+    height: 8vh;
+    color: #fff;
+    text-align: center;
+    font-size: 5vh;
+    line-height: 8vh;
+    margin: 0 auto;
+}
+
+.dsBox input#mijang {
+    display: none;
+}
+
+.dsBox .mic {
+    background-image: url(image/check_bx2_img.png);
+    display: block;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 23% center;
+    -webkit-background-size: auto 100%;
+    background-size: auto 100%;
+    margin-bottom: 10%;
+}
+
+#ck3:checked ~ #datechice {
+    display: block;
+}
+
+#mijang:checked ~ .mic {
+    background-image: url(image/check_bx_img_over.png)
+}
+
+
+/**********승객선택 **************/
+
+#persons_choice {
+    position: fixed;
+    top: 0;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    display: none;
+    overflow-y: scroll;
+    color: #4c4d4f;
+}
+
+button > i,
+label > i {
+    font-size: 2.5em;
+}
+
+.persbt {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    display: block;
+    color: #4c4d4f;
+}
+
+.persbt > p,
+.persbt > label {
+    color: #4c4d4f;
+}
+
+.persbt > label {
+    display: block;
+    margin: 0em 0.5em;
+    float: left;
+}
+
+.persbt > p {
+    font-size: 1.7em;
+    margin: 0.8em auto;
+    width: 200px;
+    height: 34px;
+    display: block;
+}
+
+.perssbx {
+    display: block;
+    margin-top: 100px;
+}
+
+.adult,
+.children,
+.childhood,
+.psyes {
+    display: block;
+    clear: both;
+    margin-bottom: 1em;
+    color: #4c4d4f;
+}
+
+.adult {}
+
+.psitem1 {
+    font-size: 1.7em;
+    font-weight: 700;
+    text-align: center;
+    color: #4c4d4f;
+}
+
+.psitem2 {
+    font-size: 1.5em;
+    text-align: center;
+    color: #666;
+}
+
+.psitem3 {
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    float: left;
+    color: #4c4d4f;
+}
+
+.adultL {
+    float: left;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.adultR {
+    float: right;
+    width: 50%;
+    margin-top: 2em;
+}
+
+.adultR button {
+    float: left;
+    color: #4c4d4f;
+}
+
+.adultR button i {
+    float: left;
+    color: #4c4d4f;
+}
+
+.selbtn1 i {
+    margin-right: 13vw;
+    color: #4c4d4f;
+}
+
+.selbtn2 i {
+    margin-left: 13vw;
+    color: #4c4d4f;
+}
+
+.perssbx .notice {
+    clear: both;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 2em;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.psyes {
+    width: 80%;
+    margin: 3em auto;
+}
+
+#persons_choice .psyes label.psok {
+    width: 100%;
+    font-size: 1.8em;
+    text-align: center;
+    background: #4479e0;
+    color: #fff;
+    padding: 0.5em;
+    height: 100%;
+    display: block;
+}
+
+
+
+
+#ck7:checked ~ #persons_choice {
+    display: block;
+}
+
+
+/*************좌석선택*****************/
+
+#persons_seat_choice {
+    position: fixed;
+    top: 0;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    display: none;
+    overflow-y: scroll;
+    color: #4c4d4f;
+}
+
+.pssyes {
+    width: 80%;
+    margin: 3em auto;
+}
+
+#persons_seat_choice .pssyes label.psok {
+    width: 100%;
+    font-size: 1.8em;
+    text-align: center;
+    background: #4479e0;
+    color: #fff;
+    padding: 0.5em;
+    height: 100%;
+    display: block;
+}
+
+.seatbox {
+    width: 60%;
+}
+
+.seatbox label {
+    display: block;
+    margin: 2em;
+    text-indent: 100px;
+    font-size: 1.5em;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-image: url(image/check_bx_img.png);
+    background-size: 40px 40px;
+    width: 100%;
+    height: 2em;
+    display: block;
+    line-height: 1.8em;
+}
+
+#ra1:checked ~ .seatbox .item1 {
+    background-image: url(image/check_over_bx2_img.png);
+}
+
+#ra2:checked ~ .seatbox .item2 {
+    background-image: url(image/check_over_bx2_img.png);
+}
+
+#ra3:checked ~ .seatbox .item3 {
+    background-image: url(image/check_over_bx2_img.png);
+}
+
+#ra4:checked ~ .seatbox .item4 {
+    background-image: url(image/check_over_bx2_img.png);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#ck8:checked ~ #persons_seat_choice {
+    display: block;
+}
+
+.air_box {
+    width: 100%;
+    height: 66vw;
+    clear: both;
+    display: block;
+    margin: 0 auto;
+    background: #4479e0;
+    position: relative;
+    color: #fff;
+}
+
+.air_box > form {
+    padding-top: 26vw;
+    clear: both;
+    text-align: center;
+    color: #fff;
+}
+
+.air_box > form > input {
+    width: 40%;
+    font-size: 8vw;
+    text-align: center;
+    margin: 0 auto;
+    text-decoration: none;
+    color: #fff;
+}
+
+.air_box > form > button {
+    position: absolute;
+    top: 32%;
+    left: calc(50% - 10vw);
+    width: 20vw;
+    height: 19vw;
+    z-index: 8;
+}
+
+.air_tit {
+    text-align: center;
+    margin-top: 5vw;
+    font-size: 3.4vw;
+    font-weight: 200;
+}
+
+.air_tit button {
+    margin-top: 16vw;
+    width: 9vw;
+    height: auto;
+}
+
+.plane_wrap1 {
+    clear: both;
+    width: 100%;
+    height: 100%;
+    overflow-x: scroll;
+    background: #efefef;
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    position: relative;
+}
+
+.a_txt_box {
+    width: 95%;
+    color: #4c4d4f;
+    margin: 0 auto;
+}
+
+.a_txt1 {
+    font-size: 3.4vw;
+    float: left;
+    display: block;
+    padding: 1em;
+}
+
+.a_txt2 {
+    float: right;
+    display: block;
+    padding: 1em;
+    font-size: 3.1vw;
+}
+
+.a_txt3 {
+    clear: both;
+    padding: 3vw;
+    font-size: 3vw;
+}
+
+/*안 3 단락 ***************/
+
+.a2_txt_box {
+    width: 95%;
+    clear: both;
+    display: block;
+    background: #fff;
+    margin: 0 auto;
+    overflow: hidden;
+    border-bottom: 1px solid #767677;
+}
+
+.a2_txt_box p {
+    float: left;
+}
+
+.a2_txt1 {
+    border: 0.5vw solid #a6dbdf;
+    border-radius: 25vw;
+    width: 20vw;
+    height: 8vw;
+    text-align: center;
+    line-height: 8vw;
+    font-size: 4vw;
+    color: #a6dbda;
+    margin: 0.5em;
+}
+
+
+
+
+
+
+
+
+.a2_txt2 {
+    color: #767677;
+    font-size: 3.6vw;
+    padding: 2.8vw 0em;
+    margin: 2vw;
+}
+
+/*4 번째 단락 ~~~ */
+
+.plane_wrap1 a {
+    width: 95%;
+    clear: both;
+    display: block;
+    background: #fff;
+    margin: 0 auto;
+    margin-bottom: 0.5em;
+    position: relative;
+    overflow: hidden;
+}
+
+.plane_wrap1 a > img {
+    display: block;
+    float: left;
+    margin: 3vw;
+    width: 10vw;
+}
+
+.plane_wrap1 a .sel_box {
+    display: block;
+    float: left;
+    margin: 3vw;
+    color: #767677;
+    width: 50%;
+}
+
+.sel_box .item1 {
+    font-size: 3.5vw;
+    float: left;
+    margin: 0 0.5em;
+}
+
+.sel_box .item2 {
+    font-size: 3.5vw;
+    float: left;
+    margin: 0 0.5em;
+}
+
+.sel_box .item3 {
+    font-size: 3.5vw;
+    float: left;
+    margin: 0 0.5em;
+}
+
+.sel_box .item4 {
+    font-size: 3vw;
+    float: left;
+    margin: 0.6em 1.1em;
+    font-weight: 300;
+}
+
+.cost {
+    float: right;
+    display: block;
+    margin: 3vw;
+    color: #767677
+}
+
+.cost .cost_txt1 {
+    font-size: 3.5vw;
+    margin: 0.2em;
+}
+
+.cost .cost_txt2 {
+    font-size: 3vw;
+    font-weight: 300;
+    margin: 0.2em;
+}
+
+
+
+.a3_tb {
+    margin-top: 2em;
+}
+
+.a3_txt1 {
+    background: #a6dbdf;
+    border-radius: 21px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 3.5vw;
+    color: #fff;
+    margin: 0.5em;
+}
+
+.rate_box {
+    width: 95%;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.people {
+    display: block;
+    float: left;
+    clear: both;
+    overflow: hidden;
+    width: 100%;
+}
+
+.peoplebox {
+    color: #4c4d4f;
+    font-size: 4.2vw;
+    width: 25%;
+    margin: 1em;
+}
+
+.peoplebox li {
+    width: 33.3333%;
+    float: left;
+    text-align: center;
+    margin-bottom: 0.5em;
+    color: #767677;
+}
+
+.rate_txt {
+    width: 93%;
+    color: #767677;
+    margin: 1em auto;
+    overflow: hidden;
+    padding: 1em;
+    box-sizing: border-box;
+    border-top: 1px solid #ccc;
+    font-size: 3.3vw;
+    font-weight: 300;
+}
+
+.rate_txt p {
+    float: left;
+    width: 33.3333%;
+    margin-bottom: 0.5em;
+}
+
+.rate_txt .rt1 {
+    text-align: left;
+}
+
+.rate_txt .rt2 {
+    text-align: center;
+}
+
+.rate_txt .rt3 {
+    text-align: right;
+}
