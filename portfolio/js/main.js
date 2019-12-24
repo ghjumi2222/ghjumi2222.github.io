@@ -51,7 +51,7 @@ $(document).ready(function(){
         $('.personality h4').addClass('t3');
         var btn_ani=setTimeout(function(){
             $('.logo_Y').addClass('on')
-            
+          
             
         },1000);
          var t1500=setTimeout(function(){
@@ -104,7 +104,7 @@ $(document).ready(function(){
         
         
         var t4000=setTimeout(function(){
-            
+          $('.scroll_an').animate({opacity:1},800)    
            
             
             
@@ -216,23 +216,36 @@ $(document).ready(function(){
                  $('#page3 .left_box').addClass('op'); 
                $('#page3 .left_box').removeClass('t3');  $('#page3 .left .pagetit').addClass('op');
                 $('#page3 .left .pagetit').removeClass('t3');
+                 $('.scroll_an').stop().animate({opacity:0},800)
+                
                 
             }  
             
+            if(sct>=3100){//500px이상 스크롤 실행시
+              
+            }   
+              
+              
             if(sct<2100){//500px이상 스크롤 실행시
               
                $('.gnb li a').css({color:'#ffdb00'});
-                $('.gnb').css('position','absolute'); 
+                $('.gnb').css('position','absolute');
+                
             }  
               
             if(sct<1500){//500px이상 스크롤 실행시
                $('.gnb').css('position','fixed');
+               
              
             }     
             if(sct<900){//500px이상 스크롤 실행시
                 $('.gnb').css('position','absolute');
              
             }  
+              
+              
+              
+              
               
         });
     

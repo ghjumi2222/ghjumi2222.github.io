@@ -16,9 +16,9 @@ a{text-align: center;}
 
 .fix .it1{transform: rotate(-45deg);top: -2000px;left: -2000px;transition: 1s;}
 
-.fix .it2{transform: rotate(-45deg);bottom: -0px;right: -3000px;transition: 1s}
+.fix .it2{transform: rotate(135deg);bottom: -0px;right: -3000px;transition: 1s}
 .fix .it1.on{top: -800px;left: -750px;}
-.fix .it2.on{top: 0;right: -2000px;}
+.fix .it2.on{top: 0;right: -2030px;}
 
 
 .circle_box{z-index: 100;width: 1920px;height: 1080px;position: absolute;}
@@ -26,6 +26,7 @@ a{text-align: center;}
 .circle_box li img{display: block;z-index: 100;width: 100%;height: 100%;}
 
 .ci1{left: 600px;top: 100px;width: 70px;}
+.ci1 img,.ci2 img,.ci3 img,.ci4 img{opacity: 0.8;}
 .ci2{top: 500px;left: 50px;animation-delay: 0.5s;width: 100px;}
 .ci3{bottom: 100px;left: 550px;animation-delay: 0.3s;width: 90px;}
 .ci4{right: 100px;top: 300px;animation-delay: 0.7s;width: 100px;}
@@ -137,7 +138,7 @@ position: absolute;left: 1920px;top: 0;}
 .gnb li a{text-decoration: none;color: rgba(255, 219, 0, 0.8);font-size: 18px;display: block;}
 .gnb li a:hover{color: #ffdb00;}
 
-#page1 .bg_left{background: #334893;width: 30%;height: 100%;float: left;}
+#page1 .bg_left{background: #334893;width: 29%;height: 100%;float: left;}
 
 .pagetit{display: block;padding-top: 100px;margin-left: 100px;width: 150px;}
 
@@ -151,34 +152,34 @@ position: absolute;left: 1920px;top: 0;}
 
 .intro{margin-left: 100px;margin-top: 10px;z-index: 10;color: #fff;width: 200px;float: left;}
 
-.intro h3{float: left;padding: 10px;font-size: 25px;}
+.intro h3{float: left;padding: 10px;font-size: 20px;font-weight: lighter;}
 .intro p{line-height: 55px;}
 
 .profile{float: right;color: #fff;margin-right: 100px;margin-top: 45px;}
-.profile p{width: 150px;}
+.profile p{width: 150px;font-size: 14px;}
 .personality h4{color: rgb(255, 219, 0);}
 .personality .p1{color: #fff;margin-top: 70px;width: 300px;margin-left: 70px;font-size: 15px;}
 .personality .p1 strong{font-size: 18px;color: #ffdb00;letter-spacing: 5px;}
-.personality .p2{color: #fff;margin-top: 0px;width: 400px;margin-left: 70px;font-size: 15px;}
+.personality .p2{color: #fff;margin-top: 0px;width: 400px;margin-left: 70px;font-size: 14px;font-weight: lighter;}
 
 .logo_Y{position: fixed;top: 50px;z-index: 200;right: 30px;opacity: 0;transition: 2s;z-index: 5;}
 .logo_Y.on{opacity: 1;top: 30px;}
 
-.about{height: 100%;box-sizing: border-box;overflow: hidden;}
-.tit{width: 90%;overflow: hidden;height: 80%;margin: 10% auto;}
+.about{height: 100%;box-sizing: border-box;overflow: hidden;width: 70%;}
+.tit{width: 70%;overflow: hidden;height: 80%;margin-top: 5%;margin-left: 2%;}
 .tit>li{width: 50%;float: left;height: 300px;}
-.tit>li>h3{margin-top: 50px;margin-left: 50px;}
+.tit>li>h3{margin-top: 50px;margin-left: 50px;font-size: 17px;}
 .tit>li .txt_box{display: block;margin-left: 50px;margin-top: 10px;}
 
 .txt_box li>p{line-height: 30px;}
 .tit li .ab_item4_wrap{margin-top: 10px;margin-left: 50px;}
-.txt_box .ti>p{text-indent: 20px;line-height: 25px;}
+.txt_box .ti>p{text-indent: 20px;line-height: 25px;font-size: 15px;}
 
 .ab_item4_wrap{width: 200px;}
 .graph_out{width: 170px;height: 16px;background-color: #696572;position: relative;margin-bottom: 20px;}
 .g_mask{width: 0%;height: 100%;position: absolute;overflow: hidden;}
 .g_color{width: 170px;height: 16px;background: #ffdb00;position: absolute;}
-.txt{width: 30px;height: 16px;color: #fff;position: absolute;left: 10%;line-height: 16px;font-size: 11px;}
+.txt{width: 30px;height: 16px;color: #334893;position: absolute;left: 10%;line-height: 16px;font-size: 11px;}
 
 .bg_bottom{
 background-image: url(../img/bg_page_pt.png);background-repeat: no-repeat;background-position: bottom bottom;
@@ -245,12 +246,12 @@ width: 1920px;height: 1080px;position: absolute;bottom: 0;z-index: -1!important;
          }
       } 
 
-#mixItUp{margin-top: 150px;left: 0%;width: 80%;margin: 0 auto;z-index: 500!important; }
+#mixItUp{margin-top: 150px;left: 0%;width: 70%;margin: 0 auto;z-index: 500!important; }
 #mixItUp div{margin-left: 20px;float: left;cursor: pointer;border-radius: 10px;}
 
 
 
-#page2 .bg_left{background: #334893;width: 30%;height: 100%;float: left;z-index: -200!important;background-image: url(../img/bg_page_pt.png);background-repeat: no-repeat;background-position: bottom bottom}
+#page2 .bg_left{background: #334893;width: 29%;height: 100%;float: left;z-index: -200!important;background-image: url(../img/bg_page_pt.png);background-repeat: no-repeat;background-position: bottom bottom}
 
 
 
@@ -293,18 +294,25 @@ transition: all 0.5s;
 #mixItUp div[data-myorder="7"]:hover{background-size: 185%;}
 
 
-#modal_pop{width: 1000px;height: 500px;position: fixed;z-index: 500;top: calc(50% - 250px);left: calc(50% - 500px);z-index: 550;display: none;}
+#modal_pop{width: 1000px;height: 500px;position: fixed;z-index: 500;top: calc(50% - 250px);left: calc(50% - 500px);z-index: 550;display: none;box-shadow: 0 0 10px rgba(59, 59, 59, 0.72)}
 .image_box{width: 1000px;height: 500px;background: #fff;}
 
-.img_box{width: 600px;height: 500px;display: block;float: left;border: 0;overflow: hidden;}
-.img_box img{width: auto;height: 100%;display: block;float: left;}
 
-.txt_img{width: 400px;height: 500px;display: block;border: 0;outline: 0;float: right;}
-.txt_img img{width: 370px;display: block;margin: -50px auto;}
+.txt_img{width: 100%;height: 100%;margin: 0 auto;display: block;}
+.txt_img img{width: 100%;height: 100%}
 
-.img_btn{position: absolute;bottom: 100px;right: 100px;width: 200px;height: 40px;border: 0;outline: 0;z-index: 50;}
+.img_btn{position: absolute;bottom: 20px;right: 100px;width: 200px;height: 40px;border: 0;outline: 0;z-index: 50;}
 .img_btn a{text-decoration: none;color: #333;display: block;width: 100%;line-height: 40px;cursor: pointer;}
 .img_btn:hover{background: #334893;}
 .img_btn:hover a{color: #fff;}
 .close_btn{outline: 0;border: 0;position: absolute;right: -50px;top: 0;font-size: 30px;padding: 5px;color: #fff;background: #333;width: 50px;height: 50px;cursor: pointer;}
 .close_btn:hover{background: #b10404;}
+
+.scroll_an{position: fixed;bottom: 100px;left: calc(50% - 20px);width: 40px;opacity: 0;}
+.scroll_an img{position: absolute;display: block;width: 40px;}
+
+.scroll_an .sa2{animation-name: updownAni1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite; }
+
