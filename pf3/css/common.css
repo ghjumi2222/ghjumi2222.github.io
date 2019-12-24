@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', 'Gupter', 'Noto Sans KR', serif, sans-serif;
+    font-size: 16px;
+    line-height: 1.2em;
+    overflow-x: hidden;
+}
+
+ul{list-style: none;}
+a{text-decoration: none;}
+
+.wrap{width: 100%;position: relative;}
+#hd{height: 80px;width: 100%;display: block;z-index: 50;}
+#hd .logo{display: block;padding: 10px;float: left;}
+#hd .logo img{display: block;height: 60px;}
+#hd .gnb{width: 1200px;height: 80px;margin-left: 440px;z-index: 55;}
+#hd .dep1{float: left;width: 170px;z-index: 55;}
+#hd .dep1>a{display: block;font-size: 20px;font-weight: bold;color: #fff;text-decoration: none;line-height: 40px;overflow: hidden;width: 170px;height: 40px;margin: 20px 0px;text-align: center;}
+#hd .dep1>a>span{color: #fff;clear: both;display: block;}
+#hd .dep1>a>span.deit1{margin-top: -40px;transition: 0.5s;opacity: 0;}
+#hd .dep1:hover>a span.deit1{margin-top: 0;opacity: 1;}
+#hd .dep1>a>span.deit2{transition: 0.5s}
+#hd .dep1:hover>a span.deit2{opacity: 0;} 
+#hd .sub{display: block;clear: both;overflow: hidden;width: 100%;position: absolute;left: 0;background: #fff;overflow: hidden;height: 0px;transition: 0.5s;z-index: 60;}
+#hd .dep1:hover a ~ .sub{height: 200px;padding-top: 20px;}
+#hd .sub>ul{margin-left: 500px;}
+#hd .dep2{float: left;width: 180px;height: 30px;line-height: 30px;text-align: left;}
+#hd .dep2>a{color: #333;font-weight: bold;text-decoration: none;font-size: 17px;border-bottom: 2px solid transparent;}
+#hd .dep2:hover>a{border-bottom: 2px solid #a10c0c;}
+#hd .dep3{}
+#hd .dep3 a{color: #333;font-size: 15px;text-decoration: none;}
+#hd .dep3 a:hover{color: #2091b7;}
+#hd .img_icon{position: absolute;top: 10px;left: 15%;}
+#hd .img_icon img{display: block;width: 180px;height: 180px;}
+
+.Language{position: absolute;top: 20px;width: 80px;height: 40px;overflow: hidden;border: 1px solid #fff;text-indent: 10px;transition: 0.5s;z-index: 20;right: 160px;}
+.Language:after{content: '▼';color: #fff;display: block;position: absolute;top: 10px;right: 10px;}
+.Language li{line-height: 40px;}
+.Language li a{color: #fff;display: block;font-weight: bold;text-decoration: none;font-size: 15px;}
+.Language:hover{height: 120px;}
+.Language li a:hover{background: #1b2b57;color: #fff;}
+.Language:hover::after{content: '▲';}
+.consulting{position: absolute;top: 20px;right: 30px;width: 100px;text-align: center;height: 40px;line-height: 40px;}
+.consulting a{display: block;font-weight: bold;color: #a10c0c;font-size: 20px;background: #fff;transition: 0.5s;text-decoration: none;}
+.consulting a:hover{color: #fff;background: #a10c0c;}
+
+#ft:before{content: '';display: block;clear: both;}
+#ft{width: 100%;background: #333;height: 210px;margin-top: 0px;margin-bottom: -100px;}
+.ft_wrap{width: 1600px;margin: 0 auto;color: #fff;position: relative;overflow: hidden;box-sizing: border-box;}
+.ft_wrap p{float: left;display: block;line-height: 200px;width: 60%;text-align: right;}
+.ft_wrap img{display: block;position: absolute;top: 70px;right: 550px;}
+
+.top{opacity: 0;transition: 0.5s}
+.top.on{width: 50px;height: 50px;position: fixed;bottom: 50px;right: 50px;background: rgba(170, 169, 169, 0.6);display: block;opacity: 1;transition: 0.5s}
+.top a{display: block;color: #fff;line-height: 50px;font-size: 25px;text-align: center;}

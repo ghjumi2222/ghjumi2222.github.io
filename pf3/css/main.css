@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+#contain{width: 100%;height: 100%;position: relative;}
+#page_box{width: 100%;height: 100%;position: relative;}
+.page:after{content: '';clear: both;display: block;height: 1px;}
+.page1 video{top: -80px;position: relative;z-index: -10;filter: brightness(0.5)}
+
+
+.page1 .con_wrap{position: relative;position: absolute;top: 0px;width: 100%;height: 100%;}
+.page1 .con_wrap img{display: block;position: absolute;transition: 1s}
+.page1 .con_wrap .con_im1{opacity: 0;width: 400px;top: 400px;left: 50px;}
+.page1 .con_wrap .con_im2{top: 300px;right: 200px;width: 400px;opacity: 0;transition-delay: 1s}
+.page2{}
+
+.page1 .con_wrap .con_im1.on{opacity: 1;top: 300px;}
+.page1 .con_wrap .con_im2.on{top: 150px;opacity: 1;}
+
+
+.page .tit{margin-left: 150px;margin-top: 50px;}
+
+.page2 .con_wrap{width: 1600px;margin: 0 auto;margin-top: 30px;margin-bottom: 100px;}
+
+.page2 .con_wrap .scroll_bar{margin: 0px auto;width: 100%;padding-top: 30px;position: relative;}
+.page2 .con_wrap .scroll_bar span{height: 5px;width: 100%;display: block;position: absolute;}
+.page2 .scroll_bar span.sb_it2{background: #1b2b57;}
+.page2 .scroll_bar span.sb_it1{background: #666;}
+
+.scroll_con_wrap{width: 100%;overflow: hidden;}
+.scroll_con_wrap ul{margin-top: 50px;width: 800%;}
+.scroll_con_wrap li{width: 300px;margin: 0px 50px;float: left;transition: 0.5s}
+
+.scroll_con_wrap li .item_img{display: block;width: 200px;border-radius: 50%;background: #1b2b57;height: 200px;position: relative;margin: 0 auto;transition: 0.5s}
+
+.scroll_con_wrap .item_img img{display: block;position: absolute;top: calc(50% - 53.5px);}
+
+#page_box .scroll_con_wrap li h3{margin: 20px auto 0px;display: block;text-align: center;font-weight: bold;font-size: 18px;}
+
+.scroll_con_wrap li p{text-align: center;margin: 10px auto;font-size: 14px;width: 200px;text-align: center;height: 40px;}
+
+.scroll_con_wrap li a{margin: 20px auto;border: 2px solid #1b2b57;display: block;width: 100px;height: 40px;line-height: 40px;text-indent: 10px;font-weight: bold;color: #1b2b57;position: relative;text-decoration: none;}
+.scroll_con_wrap li a:after{content: '';display: block;background-image: url(../img/plus.png);width: 40px;height: 40px;z-index: 50;position: absolute;top: 0px;right: 0px;background-repeat: no-repeat;background-position: center center;background-size: 15px;transition: 0.5s}
+.scroll_con_wrap li a:hover::after{animation: rotate360 2s infinite alternate linear both}
+
+@keyframes rotate360{
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(360deg);}
+    100%{transform: rotate(0deg);}
+}
+
+.scroll_con_wrap li:hover .item_img{background: #0e408a;}
+
+.page3{background: #475669;width: 100%;height: 100%;padding: 50px 0px;}
+.pr_wrap{width: 1600px;margin: 0 auto;margin-top: 100px;}
+.pr_wrap div{float: left;}
+.pr_wrap div img{display: block;filter: brightness(0.5) grayscale(0.7);transition: 0.5s}
+.pr_wrap>div:hover img{filter: brightness(1) grayscale(0);}
+.pr_wrap div.pritem1{width: 800px;clear: both;position: relative;float: left;height: 500px;}
+.pr_wrap div.pritem1 img{width: 800px;height: 500px;}
+.pr_wrap div.pritem1 div{position: absolute;width: 800px;color: #fff;bottom: 0;text-align: center;background: rgba(0, 0, 0, 0.5);}
+.pr_wrap div.pritem1 div p{width: 80%;margin: 0 auto;padding: 0px 0px 20px;}
+.pritem2,.pritem3{width: 400px;color: #fff;text-align: left;text-indent: 20px;}
+.pritem2 img,.pritem3 img{width: 400px;height: 250px;}
+.pritem2 div,.pritem3 div{height: 250px;}
+.pritem2 div p.pr_txt,.pritem3 div p.pr_txt{width: 80%;margin: 0 auto;margin: 20px;text-indent: 0;}
+.new_wrap{width: 1600px;margin: 0 auto;margin-bottom: 70px;}
+.new{width: 1300px;padding-right: 100px;box-sizing: border-box;margin-top: 50px;}
+
+.new li{float: left;width: 50%;padding-top: 10px;}
+.new li div{float: left;margin: 10px;}
+.new li div.new_txt p{padding: 30px 30px;box-sizing: border-box;font-size: 18px;}
+.new .box{background: #eee;width: 130px;height: 130px;}
+.new .box h2{text-align:center;margin: 5px auto;font-size: 75px;}
+.new .box p{text-align:center;margin: 0 auto;font-size: 18px;}
+.new_img img{display: block;width: 300px;}
+
+.page5{background: #1b2b57;padding: 50px 0px;}
+.con_wrap{width: 1600px;margin: 0 auto;}
+.page .line{margin: 40px auto;width: 1600px;margin-bottom: 0;position: relative;}
+.page5 .line span{position: absolute;}
+.page5 .line span:nth-child(1){background: #666;display: block;width: 1600px;height: 3px;}
+.page5 .line span:nth-child(2){background: #fff;display: block;width: 300px;height: 3px;}
+.page5_txt{padding: 50px 0px;}
+.recrult_wrap{margin: 20px auto;}
+.recrult_wrap li{float: left;padding: 20px 30px;position: relative;width: 33.3333%;box-sizing: border-box;transition: 0.5s}
+.recrult_wrap li img{display: block;}
+.recrult_wrap li span{display: block;position: absolute;top: calc(50% - 15px);z-index: 20;font-size: 40px;font-weight: bold;color: #fff;right: 150px;padding-bottom: 10px;border-bottom: 1px solid transparent;transition: 0.5s}
+.recrult_wrap li:hover{transform: translateY(-20px)}
+.recrult_wrap li:hover span{border-bottom: 2px solid #fff;}
+.page6{margin-bottom: 100px;padding-bottom: 100px;}
+.page6 .line span{position: absolute;}
+.page6 .line span:nth-child(1){background: #666;display: block;width: 1600px;height: 3px;}
+.page6 .line span:nth-child(2){background: #1b2b57;display: block;width: 300px;height: 3px;}
+.page6_txt{padding: 50px 0px;}
+.page6 .con_wrap{margin: 100px auto;}
+.page6 .coms_box{margin: 0 auto;position: relative;}
+.page6 .coms_box li{width: 25%;float: left;position: relative;overflow: hidden;}
+.page6 .coms_box li img{display: block;width: 100%;transition: 0.5s;}
+.page6 .coms_box li:hover img{transform: scale(1.1);}
+.page6 .coms_box li .icon_box{background: rgba(27, 43, 87, 0.8);width: 50px;height: 50px;display: block;position: absolute;top: 0;left: 0;color: #fff;font-size: 50px;line-height: 50px;text-align: center;text-transform: uppercase;z-index: 30;}
+
+.page6 .coms_box li .cs_txt{position: absolute;bottom: 0;background: rgba(0, 0, 0, 0.6);width: 100%;color: #fff;text-align: center;height: 0;overflow: hidden;transition: 0.5s}
+.page6 .coms_box li:hover .cs_txt{height: 100px;}
+
+.page{opacity: 0;transition: 2s;}
+.page1{opacity: 1;}
+.page2.on{transition-delay: 2s}
+.page.on{opacity: 1;transition: 2s;animation-name: tobAni;animation-duration: 2s;animation-timing-function: ease;}
+
+
+@keyframes tobAni{
+    0%{transform: translateY(150px)}
+    100%{transform: translateY(0px)}
+}
