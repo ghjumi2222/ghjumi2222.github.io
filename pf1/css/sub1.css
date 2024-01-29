@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+
+.contain{clear: both;border-top: 5px solid  rgb(255, 207, 77);width: 100%;margin: 0 auto;}
+.sub_title{clear: both;width:100%;height: 50px;background: rgb(203, 51, 54);display: block;}
+.sub_title p{color: #fff;font-weight: bold;line-height: 50px;text-indent: 50px;display: block;width: 1400px;margin: 0 auto;}
+.sub_title:after{content: '';display: block;}
+.con_wrap{clear: both;width: 100%;}
+.ck_box{display: none;}
+
+
+.con_wrap{width: 1400px;margin: 0 auto;height: 820px;}
+.con_wrap h3{text-indent: 30px;font-weight: bold;padding: 20px;}
+.con_wrap:after{content: '';display: block;clear: both;}
+.menu_con{width: 1400px;height: 650px;}
+.menu_con:after{content: '';display: block;clear: both;}
+.menu_box1,.menu_box2,.menu_box3{display: none;}
+.label_box{width: 150px;height: 30px;margin: 0 auto;}
+.contain label{width: 30px;height: 30px;line-height: 30px;text-align: center;border: 1px solid #ccc;cursor: pointer;margin: 50px 7px;}
+#menu1:checked ~ .label_box .me1{background: rgb(255, 207, 77);}
+#menu2:checked ~ .label_box .me2{background: rgb(255, 207, 77);}
+#menu3:checked ~ .label_box .me3{background: rgb(255, 207, 77);}
+.menu_con ul.on{display: block;}
+.menu_con ul li{width: 300px;margin: 25px;float: left;height: 275px;position: relative;overflow: hidden;border: 1px solid #ccc;box-sizing: border-box;}
+.menu_con ul li span{display: block;position: absolute;}
+.menu_con ul li span.img{width: 100%;height: 100%;}
+.menu_con ul li span.img img{display: block;width: 100%;margin: 0 auto;position: absolute;top: 0px;}
+
+.menu_con ul li span.text{background: rgba(203, 51, 54,1);width: 100%;height: 100%;overflow: hidden;transition: 0.5s;bottom: -100%;z-index: 6;}
+
+.menu_con ul li span.text h4{font-weight: bold;color: #fff;margin: 20px;display: block;text-align: center;font-size: 25px;}
+.menu_con ul li span.text p{width: 80%;margin: 0px auto;color: #fff;margin-top: 60px;}
+.menu_con ul li:hover span.text{bottom: 0;}
+
+.new:after{width: 40px;height: 40px;content: "NEW";z-index: 5;position: absolute;top: 5px;left: 5px;background: #ffcd5b;color: #fff;font-size: 14px;border-radius: 50%;text-align: center;line-height: 40px;transition: 0.2s;}
+
+.star:before{width: 40px;height: 40px;content: '대표';z-index: 4;position: absolute;top: 5px;left: 5px;background: #ca3239;color: #fff;font-size: 14px;border-radius: 50%;text-align: center;line-height: 40px;}
